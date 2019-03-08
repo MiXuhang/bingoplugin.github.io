@@ -5,77 +5,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/index-search.css">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<title>萌萌哒的小米-(゜-゜)つロ</title>
 </head>
 
 <body>
 
-<script>
-	function tofirst(){    
-		//document.getElementById("main").src='pages/first.html'
-		document.getElementById("main").src='pages/first.html'
-	}
-	function tobbs(){
-		document.getElementById("main").src='pages/bbs.html'
-	}
-</script>
-
-<!--搜索页面 style="display:none;" -->
-<div class="container">
-	
-	<div class="maincontainer">
-		<img src="images/baidulogo.png" style="width:250px" alt="百度LOGO" title="百度一下,你就知道">
-		<input class="searchinput" type="text">
+	<div id="searchcontainer" class="searchcontainer">
+		<img src="images/searchlogo.png" height="9%" alt="Search LOGO" title="小孩子才做选择,谷歌百度我全都要">
+		<input id="searchinput" class="searchinput" type="text">
 		<div>
-		<button style="width:120px;height:40px"><font size="+1">谷歌搜索</font></button>
-		<button style="width:120px;height:40px"><font size="+1">百度一下</font></button>
+			<button id="google" class="searchbutton">&nbsp;Google 搜索&nbsp;</button>
+			<button id="baidu" class="searchbutton">&nbsp;百度一下&nbsp;</button>
 		</div>
+		<div style="height:25%"></div>
 	</div>
-	
-</div>
 
-<!--个人页面-->
-<div class="container"> 
-	
-	<!--左侧-->
-	<div class="menucontainer" id="left">
-		<!--头像-->
-		<div id="logodiv">
-			<img id="logoimg" src="images/1440504500.jpg" alt="bingoNO1" title="小米很可爱的">
-		</div>
-		<hr color="#595959">
-		<!--菜单栏-->
-		<div id="menu">
-			<a class="button" onclick="tofirst()"><p align="center"><font color="#4c4c4c"><strong>首页</strong></font></p></a>
-		  	<a class="button" onclick="tobbs()"><p align="center" ><font color="#4c4c4c"><strong>留言</strong></font></p></a>
-			<a class="button" onclick=""><p align="center" ><font color="#4c4c4c"><strong>返回搜索</strong></font></p></a>
-		</div>
-		<hr color="#595959">
-		<!--网页说明-->
-		<div id="copyright">
-			<font color="#EFEFEF">
-			<p align="center">Copyright &copy; 2019</p>
-			<p align="center">All Right Reserved</p>
-			<p align="center">bingotion.com</p>
-			</font>
-		</div>
-  </div>
-	
-	<!--右侧-->
-	<div class="maincontainer" style="display:none;">
-		<div id="right">
-			<iframe id="main" src="pages/first.html" frameborder="0" width="auto" scrolling="Yes"></iframe>
-		</div>
-	</div>
-	
-</div>
-<!--切换按钮-->
-<div>
-	<button>切换</button>
-</div>
-	
 </body>
 	
 </html>
