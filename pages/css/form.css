@@ -1,0 +1,41 @@
+/*Content Padding Border Margin*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+/*样式前提*/
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+img{
+	margin: 0px 20px 0px 20px;
+}
+
+/*菜单栏块状内容的排版*/
+.container{
+	width: 100%;
+	padding: 40px 0px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+/*块状内容样式*/
+.form{
+	width: 70%;
+	padding: 15px 15px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #000000;
+	margin: 5px;
+	background-color: rgba(225,225,225,0.5);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
