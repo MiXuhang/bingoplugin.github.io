@@ -10,11 +10,9 @@
 	<script type="text/javascript">
 		try{
     		if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        		window.location.href="m.index.html";
+        		window.location.href="pages/m.index.html";
     		}
-			else{
-        		
-			}
+			else{}
 		}
 		catch(e){}
 	</script>
@@ -23,19 +21,14 @@
 <body>
 
 	<script language="javascript">
-		//搜索跳转
 		function google(){  
 			var text=document.getElementById("searchinput").value;
 			window.location.href="https://www.google.com.hk/search?safe=strict&q="+text;
 		}
 		function baidu(){  
 			var text=document.getElementById("searchinput").value;
-			window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+text;
-			
+			window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+text;		
 		} 
-		//判断客户端
-		
-
 	</script>  
 	
 	<div id="searchcontainer" class="searchcontainer">
