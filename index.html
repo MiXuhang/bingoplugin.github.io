@@ -7,27 +7,43 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 	<title>搜索页面-(゜-゜)つロ</title>
+	<script type="text/javascript">
+		try{
+    		if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        		window.location.href="m.index.html";
+    		}
+			else{
+        		
+			}
+		}
+		catch(e){}
+	</script>
 </head>
 
 <body>
 
 	<script language="javascript">
+		//搜索跳转
 		function google(){  
-		var text=document.getElementById("searchinput").value;
-		window.location.href="https://www.google.com.hk/search?ei&q="+text;
+			var text=document.getElementById("searchinput").value;
+			window.location.href="https://www.google.com.hk/search?safe=strict&q="+text;
 		}
 		function baidu(){  
-		var text=document.getElementById("searchinput").value;
-		window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+text;
-		}  
+			var text=document.getElementById("searchinput").value;
+			window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+text;
+			
+		} 
+		//判断客户端
+		
+
 	</script>  
 	
 	<div id="searchcontainer" class="searchcontainer">
 		<img src="images/searchlogo.png" height="9%" alt="Search LOGO" title="小孩子才做选择,谷歌百度我全都要">
-		<input id="searchinput" class="searchinput" type="text" autocomplete="off">
+		<input id="searchinput" class="searchinput" type="none" autocomplete="off">
 		<div>
 			<button id="google" class="searchbutton" onClick="google()">&nbsp;Google 搜索&nbsp;</button>
-			<button id="baidu" class="searchbutton" onClick="baidu()">&nbsp;百度一下&nbsp;</button>
+			<button id="baidu" class="searchbutton" onClick="baidu1()">&nbsp;百度一下&nbsp;</button>
 		</div>
 		<div style="height:25%"></div>
 	</div>
