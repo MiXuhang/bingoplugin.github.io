@@ -12,7 +12,7 @@
 <body>
 
 	<script language="javascript">
-		//搜索跳转
+		//搜索跳转 alert('click enter')
 		function google(){  
 			var text=document.getElementById("searchinput").value;
 			window.location.href="https://www.google.com.hk/search?safe=strict&q="+text;
@@ -20,12 +20,17 @@
 		function baidu(){  
 			var text=document.getElementById("searchinput").value;
 			window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+text;
-		} 
-	</script>  
+		}
+		function getKey(){
+			if(event.keyCode==13){
+				baidu();
+			}   
+		}
+	</script>
 	
 	<div id="searchcontainer" class="searchcontainer">
 		<img src="../images/searchlogo.png" height="9%" alt="Search LOGO" title="小孩子才做选择,谷歌百度我全都要">
-		<input id="searchinput" class="searchinput" type="none" autocomplete="off">
+		<input id="searchinput" class="searchinput" type="none" autocomplete="off" onkeypress="getKey()">
 		<div>
 			<button id="google" class="searchbutton" onClick="google()">&nbsp;Google搜索&nbsp;</button>
 			<button id="baidu" class="searchbutton" onClick="baidu()">&nbsp;百度一下&nbsp;</button>
