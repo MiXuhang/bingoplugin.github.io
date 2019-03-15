@@ -58,7 +58,7 @@ a{
 	border-style: solid;
 	border-color: darkgrey;
 	border-radius: 5px;
-	margin: 40px 0px 40px 0px;
+	margin: 20px 0px 20px 0px;
 	background-color: #FEFEFE;
 }
 .button{
@@ -68,7 +68,7 @@ a{
 	border-color: darkgrey;
 	border-radius: 3px;
 	margin: 0px 0px;
-	font-size: 15px;
+	font-size: 12px;
 	background-color: #F8F8F8;
 }
 #google:hover{
