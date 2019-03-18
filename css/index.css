@@ -39,9 +39,10 @@ a{
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	flex-grow: 3;
+	flex-grow: 10;
 }
 .under{
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -51,9 +52,14 @@ a{
 }
 
 /*页面元素*/
+.logo{
+	width: 15%;
+	min-width: 251px;
+}
 .input{
 	width: 36%;
 	height: 40px;
+	min-width: 500px;
 	font-size:17px;
 	padding: 8px 6px;
 	border-width: 1px;

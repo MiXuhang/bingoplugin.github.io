@@ -17,6 +17,7 @@
 		catch(e){}
 	</script>
 </head>
+	
 
 <body>
 
@@ -41,10 +42,10 @@
 			<button class="button" style="margin: 12px">一个卖萌的按钮</button><!--这里将来会有个按钮-->
 		</div>
 		<div class="main"> <!--主体-->
-			<img src="images/searchlogo.png" height="14%" alt="Search LOGO" title="小孩子才做选择,谷歌百度我全都要">
+			<img class="logo" src="images/searchlogo.png" alt="Search LOGO" title="小孩子才做选择,谷歌百度我全都要">
 			<input id="searchinput" class="input" type="none" autocomplete="off" onkeypress="getKey()">
 			<div>
-				<button id="google" class="button" onClick="google()">&nbsp;Google 搜索&nbsp;</button>
+				<button id="google" class="button" onClick="google  ()">&nbsp;Google 搜索&nbsp;</button>
 				<button id="baidu" class="button" onClick="baidu()">&nbsp;百度一下&nbsp;</button>
 			</div>
 		</div>
