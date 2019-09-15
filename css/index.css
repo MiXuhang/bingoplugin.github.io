@@ -1,89 +1,28 @@
-*{
-	margin: 0px;
-	padding: 0px;
-	box-sizing: border-box;
+/*样式排版*/
+.head > .center,.foot > .center{
+	color: whitesmoke;
+	font-family: "微软雅黑";
+	font-size: 16px;
 }
-html{
+.head > .center > .logo{
+	width: 60px;
+	height: 60px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.head > .center > *:not(.logo){
 	height: 100%;
-}
-body{
-	height: 100%;
-	min-width: 800px;
-	min-height: 600px;
-}
-a{
-	text-decoration: blink;
-}
-
-/*页面框架*/
-.container{
-	width: 100%;
-	height: 100%;
+	padding: 10px;
+	border: 1px solid rgba(0,0,0,0);
+	border-radius: 5px;
+	margin-left: 8px;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #F8F9FA;	
-}
-.head{
-	width: 100%;
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: flex-start;
-	align-items: flex-start;
-	flex-grow: 3;
-}
-.main{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
-	flex-grow: 10;
-}
-.under{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	flex-grow: 1;
-	font-weight: lighter;
+	transition: border-color 0.2s;
 }
-
-/*页面元素*/
-.logo{
-	width: 15%;
-	min-width: 251px;
-}
-.input{
-	width: 36%;
-	height: 40px;
-	min-width: 500px;
-	font-size:17px;
-	padding: 8px 6px;
-	border-width: 1px;
-	border-style: solid;
-	border-color: darkgrey;
-	border-radius: 5px;
-	margin: 40px 0px 40px 0px;
-	background-color: #FEFEFE;
-}
-.button{
-	padding: 8px 10px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: darkgrey;
-	border-radius: 3px;
-	margin: 0px 0px;
-	font-size: 15px;
-	background-color: #F8F8F8;
-}
-#google:hover{
-	border-color: #DD7A03;
-	background-color: #FEE2C0;
-}
-#baidu:hover{
-	border-color: #087EFB;
-	background-color: #E7F2FE;
+/*事件动画效果(需要transition属性)*/
+.head > .center > a:hover{
+	border-color: #2196F3;
 }

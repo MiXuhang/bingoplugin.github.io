@@ -1,61 +1,50 @@
 <!DOCTYPE HTML>
-<html>
+
+<html lang="zh_CN">
 	
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes">
+	<meta name="viewport" content="width=device-width, height=device-height,user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/defaultcontainer.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-	<title>搜索页面-(゜-゜)つロ</title>
-	<script type="text/javascript">
-		try{
-    		if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-        		window.location.href="pages/m.index.html";
-    		}
-			else{}
-		}
-		catch(e){}
-	</script>
+	<link rel="stylesheet" type="text/css" href="css/search.css">
+	<link rel="stylesheet" type="text/css" href="images/image.css">
+	<link rel="icon" class="logo" type="image/x-icon">
+	<title>bingotion|゜-゜)つロ</title>
 </head>
+<body> 
 	
-
-<body>
-
-	<script language="javascript">
-		function google(){  
-			var text=document.getElementById("searchinput").value;
-			window.location.href="https://www.google.com.hk/search?safe=strict&q="+text;
-		}
-		function baidu(){  
-			var text=document.getElementById("searchinput").value;
-			window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+text;		
-		} 
-		function getKey(){
-			if(event.keyCode==13){
-				baidu();
-			}   
-		}
-	</script>  
-	
-	<div class="container">
-		<div class="head">
-			<button class="button" style="margin: 12px">一个卖萌的按钮</button><!--这里将来会有个按钮-->
-		</div>
-		<div class="main"> <!--主体-->
-			<img class="logo" src="images/searchlogo.png" alt="Search LOGO" title="小孩子才做选择,谷歌百度我全都要">
-			<input id="searchinput" class="input" type="none" autocomplete="off" onkeypress="getKey()">
-			<div>
-				<button id="google" class="button" onClick="google  ()">&nbsp;Google 搜索&nbsp;</button>
-				<button id="baidu" class="button" onClick="baidu()">&nbsp;百度一下&nbsp;</button>
-			</div>
-		</div>
-		<div class="under"><!--网页声明-->
-			<p>Copyright &copy; 2019-2020</p>
-			<p>All Right Reserved.</p>
-			<br>
-			<p>GitHub</p>
+	<div class="main">
+		<script language="javascript">
+			function google(){  
+				var text=document.getElementById("searchinput").value;
+				window.location.href="https://www.google.com.hk/search?safe=strict&q="+text;
+			}
+			function baidu(){  
+				var text=document.getElementById("searchinput").value;
+				window.location.href="https://www.baidu.com/s?ie=UTF-8&wd="+text;		
+			}
+			function getKey(){
+				if(event.keyCode==13){
+					baidu();
+				}   
+			}
+		</script>
+		<img class="searchlogo" src="images/searchlogo.gif" alt="Search LOGO" title="小孩子才做选择,谷歌百度我全都要">
+		<input id="searchinput" class="searchinput" type="none" autocomplete="off" onkeypress="getKey()">
+		<div>
+			<button id="google" class="searchbutton" onClick="google()">&nbsp;Google 搜索&nbsp;</button>
+			<button id="baidu" class="searchbutton" onClick="baidu()">&nbsp;百度一下&nbsp;</button>
 		</div>
 	</div>
+	<div class="foot">
+		<div class="center">
+			<p>Copyright © 2019-2020, All Right Reserved.</p>
+			<p>github.com | 搜索首页</p>
+		</div>
+	</div>
+	
 </body>
 	
 </html>

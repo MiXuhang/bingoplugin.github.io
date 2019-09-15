@@ -1,0 +1,44 @@
+.head,.foot,.main{
+	background-color: white;
+}
+.head > .center,.foot > .center{
+	color: black;
+}
+.main{
+	min-height: calc(100% - 80px)
+}
+.searchlogo{
+	width: 15%;
+	min-width: 251px;
+}
+.searchinput{
+	width: 36%;
+	height: 40px;
+	min-width: 500px;
+	font-size:17px;
+	padding: 8px 6px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: darkgrey;
+	border-radius: 5px;
+	margin: 40px 0px 40px 0px;
+	background-color: #FEFEFE;
+}
+.searchbutton{
+	padding: 8px 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: darkgrey;
+	border-radius: 3px;
+	margin: 0px 0px;
+	font-size: 15px;
+	background-color: #F8F8F8;
+}
+#google:hover{
+	border-color: #DD7A03;
+	background-color: #FEE2C0;
+}
+#baidu:hover{
+	border-color: #087EFB;
+	background-color: #E7F2FE;
+}
