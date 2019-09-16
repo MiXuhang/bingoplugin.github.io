@@ -1,6 +1,6 @@
 body{
-	min-width: inherit !important;
-	min-height: inherit !important;
+	min-width: auto !important;
+	min-height: auto !important;
 }
 .head,.foot,.main{
 	background-color: white;
