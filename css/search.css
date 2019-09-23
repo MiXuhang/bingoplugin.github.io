@@ -12,7 +12,7 @@
 	border-style: solid;
 	border-color: darkgrey;
 	border-radius: 5px;
-	margin: 40px 0px 40px 0px;
+	margin: 40px 0px;
 	background-color: #FEFEFE;
 }
 .searchbutton{
@@ -36,11 +36,12 @@
 /*小屏幕适配*/
 @media only screen and (max-width: 800px){
 	.searchlogo{
-		width: 38%;
+		width: 50%;
 		min-width: 0px;
 	}
 	.searchinput{
 		width: 80%;
 		min-width: 0px;
+		margin: 20px 0px;
 	}
 }
