@@ -1,16 +1,3 @@
-body{
-	min-width: 0px;
-	min-height: 0px;
-}
-.head,.foot,.main{
-	background-color: white;
-}
-.head > .center,.foot > .center{
-	color: black;
-}
-.main{
-	min-height: calc(100% - 80px)
-}
 .searchlogo{
 	width: 15%;
 	min-width: 251px;
@@ -45,4 +32,15 @@ body{
 #baidu:hover{
 	border-color: #087EFB;
 	background-color: #E7F2FE;
+}
+/*小屏幕适配*/
+@media only screen and (max-width: 800px){
+	.searchlogo{
+		width: 38%;
+		min-width: 0px;
+	}
+	.searchinput{
+		width: 80%;
+		min-width: 0px;
+	}
 }

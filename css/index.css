@@ -1,28 +1,55 @@
-/*样式排版*/
-.head > .center,.foot > .center{
-	color: whitesmoke;
-	font-family: "微软雅黑";
-	font-size: 16px;
+/*默认样式*/
+body{
+	min-height: 360px;
 }
-.head > .center > .logo{
-	width: 60px;
-	height: 60px;
+/*PC端样式排版*/
+.head > .center,.foot > .center{
+	color: #FFFFFF;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+.head > .center .logo{
+	width: auto;
+	height: 100%;
+	border: 1px solid #626262;
 	border-radius: 5px;
-	margin-right: 10px;
+	transition: border-color 0.2s;
 }
 .head > .center > *:not(.logo){
 	height: 100%;
 	padding: 10px;
-	border: 1px solid rgba(0,0,0,0);
+	border: 1px solid #CFCFCF;
 	border-radius: 5px;
 	margin-left: 8px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	white-space: nowrap;
+	background-color: #676767;
 	transition: border-color 0.2s;
+}
+.main > .center > iframe{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	border-radius: 4px;
+	background-color: white;
+}
+/*小屏幕适配*/
+@media only screen and (max-width: 800px){
+	.head > .center,.foot > .center{
+		font-size: 14px;
+	}
+	.head > .center > .logo{
+		height: 100%;
+	}
+	#easteregg{
+		display: none;
+	}
 }
 /*事件动画效果(需要transition属性)*/
 .head > .center > a:hover{
-	border-color: #2196F3;
+	color: #FAE2B9;
+	border-color: #89C7F8;
 }
