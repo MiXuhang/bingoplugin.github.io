@@ -51,7 +51,7 @@ body{
 		height: 60px;
 	}
 	.main{
-		height: calc(100% - 120px);
+		height: calc(100% - 80px);
 	}
 	.center{
 		width: 98%;
